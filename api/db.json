@@ -1,0 +1,180 @@
+{
+  "data": [
+    {
+      "id": "0b6fe2a2-605f-11ed-bcb5-0ab5e4003204",
+      "product_name": "iPhone 15 Pro Max",
+      "price": 1299,
+      "images": [
+        "https://www.att.com/idpassets/global/devices/phones/apple/apple-iphone-14-pro-max/gallery/spaceblack/spaceblack-1.jpg"
+      ],
+      "description": "El último teléfono de Apple que viene con la nueva isla dinámica",
+      "features": {
+        "stats": {
+          "sold": 18,
+          "isNew": true,
+          "rating": 4,
+          "hasDelivery": false
+        },
+        "details": {
+          "year": "2022",
+          "brand": "Apple",
+          "color": "Negro",
+          "model": "14",
+          "category": "Tecnología"
+        }
+      },
+      "created_at": 1668019685,
+      "updated_at": 1668578474
+    },
+    {
+      "id": "19b5055a-5ef2-11ed-bcb5-0ab5e4003204",
+      "product_name": "Auto MB 2023 v4",
+      "price": 50000,
+      "images": [
+        "https://cdn.motor1.com/images/mgl/b04yv/s1/el-nuevo-mercedes-benz-clase-s-dobla-con-las-cuatro-ruedas-y-es-autonomo-pero-solo-en-los-paises-donde-se-permita.jpg"
+      ],
+      "description": "Auto muy bonito para la familia",
+      "features": {
+        "stats": {
+          "sold": 12,
+          "isNew": false,
+          "rating": 3,
+          "hasDelivery": false
+        },
+        "details": {
+          "year": "2022",
+          "brand": "MB",
+          "color": "red",
+          "model": "2021",
+          "category": "Hogar"
+        }
+      },
+      "created_at": 1667862942,
+      "updated_at": 1667940104
+    },
+    {
+      "id": "b9992b44-605e-11ed-bcb5-0ab5e4003204",
+      "product_name": "PlayStation 5",
+      "price": 550,
+      "images": [
+        "https://target.scene7.com/is/image/Target/GUEST_e297b161-f3f9-4800-848e-6f22889161c2"
+      ],
+      "description": "Consola de videojuegos para todas las edades",
+      "features": {
+        "stats": {
+          "sold": 281,
+          "isNew": true,
+          "rating": 5,
+          "hasDelivery": false
+        },
+        "details": {
+          "year": "2021",
+          "brand": "Sony",
+          "color": "Blanco",
+          "model": "PS5",
+          "category": "Tecnología"
+        }
+      },
+      "created_at": 1668019548,
+      "updated_at": 1668019584
+    },
+    {
+      "id": "c58ee95b-6542-11ed-9ed7-0ab5e4003204",
+      "product_name": "MacBook m6",
+      "price": 2000,
+      "images": [
+        "https://hiraoka.com.pe/media/catalog/product/m/a/macbook_pro_13_in_space_gray_pdp_image_position-1_mxla.jpg"
+      ],
+      "description": "Laptop",
+      "features": {
+        "stats": {
+          "sold": 0,
+          "isNew": true,
+          "rating": 5,
+          "hasDelivery": true
+        },
+        "details": {
+          "year": "2030",
+          "brand": "Apple",
+          "color": "Blanco",
+          "model": "M6",
+          "category": "Tecnología"
+        }
+      },
+      "created_at": 1668557298,
+      "updated_at": 0
+    },
+    {
+      "id": "3663284d-6562-11ed-9ed7-0ab5e4003204",
+      "product_name": "ÁRBOL NAVIDEÑO ARTIFICIAL",
+      "price": 100,
+      "images": [
+        "https://cdn.homedepot.com.mx/productos/164085/164085.jpg",
+        "https://cdn.homedepot.com.mx/productos/164085/164085-a1.jpg",
+        "https://cdn.homedepot.com.mx/productos/164085/164085-a2.jpg"
+      ],
+      "description": "CON ILUMINACIÓN FESTIVE PINE 2.28 M",
+      "features": {
+        "color": "verde",
+        "tallas": [
+          "2.3m",
+          "1.5m",
+          "2.28m"
+        ]
+      },
+      "created_at": 1668570801,
+      "updated_at": 0
+    },
+    {
+      "id": "65f87486-65ca-11ed-9ed7-0ab5e4003204",
+      "product_name": "PUNTA DE ÁRBOL NAVIDEÑA ESTRELLA DORADO",
+      "price": 265,
+      "images": [
+        "https://cdn.homedepot.com.mx/productos/163802/163802-d.jpg"
+      ],
+      "description": "",
+      "features": {
+        "color": "dorado"
+      },
+      "created_at": 1668615549,
+      "updated_at": 0
+    },
+    {
+      "email": "loquesea@edteam.com",
+      "password": "54365667",
+      "id": "0p_EHcr"
+    },
+    {
+      "nombre": "Especialidad en UX-IU",
+      "id": "zdWozvZ"
+    },
+    {
+      "id": "xeB3lpE"
+    },
+    {
+      "email": "gghhhg@edteam.com",
+      "password": "46888",
+      "id": "FixYAgp"
+    },
+    {
+      "id": "oaQXBFo"
+    },
+    {
+      "id": "VbnfDcq"
+    },
+    {
+      "id": "YmSKwuk"
+    },
+    {
+      "email": "loquesea@edteam.com",
+      "password": "4655577",
+      "id": "VMQ4Cfq"
+    }
+  ],
+  "messages": [
+    {
+      "code": "ok",
+      "message": "¡listo!"
+    }
+  ]
+}

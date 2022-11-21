@@ -5,7 +5,10 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:prettier/recommended",
+        "plugin:react/recommended",
+        "standard"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -15,30 +18,14 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
-        
-     "rules": {
         "react/react-in-jsx-scope": "off",
-         "react/prop-types": "off"
-     },
-
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+        "react/prop-types": "off",
+        "prettier/prettier": [ "error", {
+            "semi": false
+    }]
+}
 }

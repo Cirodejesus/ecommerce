@@ -13,7 +13,9 @@ const App = () => {
       <MainHeader/>
       {/*<Outlet/> Representa el elemento de la ruta secundaria, si lo hay. 
       se le puede agregar las rutas a un footer o aun sidebar o a un Header, portador */}
+      <div className="pt-16 max-w-256 m-auto">
       <Outlet/>
+      </div>
     </div>
   )
 }
