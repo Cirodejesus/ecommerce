@@ -2,40 +2,44 @@ import axios from 'axios'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { API_URL } from '../../constants/env'
-import { setToken } from '../../helpers/auth'
 import LoginTemplate from '../templates/LoginTemplate'
 
-const Login = () => {
+const Register = () => {
   const nav = useNavigate()
 
   const [error, setError] = useState()
-
-  // Fuction: handleSubmit funciona para el envio del formulario.
   const handleSubmit = (e) => {
     e.preventDefault()
-    setError()
-
-    //  objecto para el email
     const data = {
       email: e.target.email.value,
       password: e.target.password.value,
+      details: {
+        fullname: e.target.fullname.value,
+      },
     }
-    /**.then quiero ver que respuesta me envia backend
-     * .catch si la resp falla, quiero extender ese error */
+
     axios
-      .post(`${API_URL}/public/login`, data)
-      .then((resp) => {
-        setToken(resp.data.data.token)
-        nav('/')
+      .post(`${API_URL}/public/users`, data)
+      .then(() => {
+        nav('/login')
       })
       .catch((err) => {
         setError(err)
+        console.log(err)
       })
   }
 
   return (
-    <LoginTemplate title="Iniciar sesión">
+    <LoginTemplate title="Regístrate">
       <form onSubmit={handleSubmit}>
+        <div className="mb-4">
+          <input
+            type="text"
+            placeholder="Nombre completo"
+            name="fullname"
+            required
+          />
+        </div>
         <div className="mb-4">
           <input
             type="email"
@@ -54,20 +58,19 @@ const Login = () => {
         </div>
         <div className="text-center pt-1 mb-12 pb-1">
           <button className="bg-gradient w-full" type="submit">
-            Ingresar
+            Crear cuenta
           </button>
-          <Link className="text-gray-500" to="/registro">
+          <Link className="text-gray-500" to="/login">
             ¿Ya tienes cuenta? Inicia sesión
           </Link>
         </div>
         {error && (
           <p className="text-center p-2 bg-red-100 text-red-800">
-            {error?.response?.data?.data}
+            {error?.response?.data.errors[0].message}
           </p>
         )}
       </form>
     </LoginTemplate>
   )
 }
-
-export default Login
+export default Register
